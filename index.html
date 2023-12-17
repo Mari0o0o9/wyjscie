@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NFZ</title>
+</head>
+<body>
+    <button id="wyjscie"> 
+        <span>
+            Najedź i zobacz
+        </span>
+    </button>
+    <div id="siema">
+        dupa
+    </div>
+</body>
+<script>
+    function siemanko() {
+        var button = document.getElementById(`wyjscie`)
+        var siema = document.getElementById(`siema`)
+
+        button.addEventListener(`mouseenter`, ()=> {
+            siema.style.display = `flex`
+        })
+        button.addEventListener(`mouseleave`, ()=> {
+            siema.style.display = `none`
+        })
+    }
+    siemanko()
+</script>
+</html>
